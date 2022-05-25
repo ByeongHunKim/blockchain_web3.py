@@ -6,6 +6,4 @@ client = Client("https://api.devnet.solana.com")
 res = client.is_connected()
 
 print(res)
-
-getBalance = client.get_balance("AsDHpXLGxHeHNWxpqEZHoMC2LpWjJznfWrm8nTz9FvDn")
-print(getBalance['result']['value'])
+# True 가 나오면 연결 및 solana.py 설치가 잘 진행된 것이다.
