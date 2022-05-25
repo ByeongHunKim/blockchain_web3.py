@@ -8,6 +8,6 @@
     - 테스트는 `django-admin startproject mysite .` -> `python manage.py startapp <appName>` 로 설정한 환경에서만 가능한 상황이다.
 ## 선택지 2
 - aws 서버
-    - https://wool-march-efb.notion.site/anaconda-643cb6a46238457e8ddecd0a754f19d0
+    - https://velog.io/@hunsm4n/anaconda-%EC%84%9C%EB%B2%84%EC%84%B8%ED%8C%85
 
 
