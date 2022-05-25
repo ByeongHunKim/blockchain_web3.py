@@ -2,6 +2,10 @@
 # ethereum [web3.py] 
 # Development environment setting
 
+`https://bamtory29.tistory.com/entry/GitGithub-%EC%9B%90%EA%B2%A9-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%9D%98-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%A7%80%EC%9A%B0%EA%B8%B0`
+- git rm --cached -r 폴더/파일명
+
+
 ## 선택지 1
 - 로컬환경
     - 선택지 2 에 있는 곳에서 로컬환경에 맞게 설치를 진행하면 된다.
