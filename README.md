@@ -1,8 +1,3 @@
-# solana[solana.py] 
-# ethereum [web3.py] 
-
-
-
 <div align=center><h1>📚 STACKS</h1></div>
 
 <div align=center>
@@ -10,13 +5,12 @@
 <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
 <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">
 <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
-<bt>
-
+<br>
 <img src="https://img.shields.io/badge/amazonaws-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"> 
 <img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"> 
-
 </div>
 
+# solana[solana.py] ethereum [web3.py] 
 # Development environment setting
 `https://bamtory29.tistory.com/entry/GitGithub-%EC%9B%90%EA%B2%A9-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%9D%98-%ED%8C%8C%EC%9D%BC%EC%9D%84-%EC%A7%80%EC%9A%B0%EA%B8%B0`
 - git rm --cached -r 폴더/파일명
