@@ -5,10 +5,12 @@ from web3 import Web3, IPCProvider, HTTPProvider
 
 ## https://matic-mumbai.chainstacklabs.com
 web3 = Web3(HTTPProvider("https://matic-mumbai.chainstacklabs.com"))
+
+isConnected = web3.isConnected()
 print("1. 폴리곤 연결여부:", isConnected)
 
-Addr = "0xC1F72d2436f6f23384c2d035e509f795450C2434"
-privKey = "privkey"
+Addr = "0x024Aff00fC375270913E0CdF0b91814457075f3d"
+privKey = "0x339d36f78d20fe6223c48bfd2eebdac9599f6d787902885f99167bc6a420a344" # privkey
 AddrChecksum = web3.toChecksumAddress(Addr)
 print("2. checkSum - 확인여부 :", AddrChecksum)
 print("2.1 privKey - 확인여부 :", privKey)
@@ -26,7 +28,7 @@ value = web3.toWei(0.05, 'ether')
 print("5. 보내는금액 - 확인여부 :", value)
 
 tx = {'nonce': nonce,
-      'to': '0xf1337471403D2D7E7a83166c5E48dd619ecc95c3',
+      'to': '0xC1F72d2436f6f23384c2d035e509f795450C2434',
       'value': value,
       'gas': 21000,
       'gasPrice': getGasPrice,
