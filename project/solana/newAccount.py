@@ -23,31 +23,31 @@ test = client.is_connected()
 
 # create solana wallet (phantom , sollet wallet)
 
-print("솔라나와 연결여부:" ,test)
+print("1. 솔라나와 연결여부:" ,test)
 # 솔라나와 연결여부: True
 
 account = Account()
-print(account)
+print("2. account - 결과 :" ,account)
 # <solana.account.Account object at 0x7fe5ab0446a0>
 
 secretKey = account.secret_key()
-print(secretKey)
+print("2. secretKey - 결과 :" ,secretKey)
 # b"zJD1Js\x00\xb7\x04\xc3V\xbc\xf3\xa9;\xabZ\x05'+\x9f\x81D\xac1\xb8\x1c\xfe.+\x02w"
 
 bytesAccount = bytes(account.public_key())
-print(bytesAccount)
+print("3. bytesAccount - 결과 :" ,bytesAccount)
 # b'9\x15\x90\xe2K\xf5[\xda\x87\x1b\xfb%\xb0e\xb4,\xf4\xfaQ\xcd\xde\x1c RC*\xbei\x80@1s'
 
 publicAddr = b58encode(bytesAccount).decode()
-print(publicAddr)
+print("4. publicAddr - 결과 :" ,publicAddr)
 # 4qqK5vyz5GpYXsFVQz2JcC7NfSBWmsBdQsHRhF7pRYrE
 
 makePrivKey = secretKey + bytesAccount
-print(makePrivKey)
+print("5. makePrivKey - 결과 :" ,makePrivKey)
 # b"zJD1Js\x00\xb7\x04\xc3V\xbc\xf3\xa9;\xabZ\x05'+\x9f\x81D\xac1\xb8\x1c\xfe.+\x02w9\x15\x90\xe2K\xf5[\xda\x87\x1b\xfb%\xb0e\xb4,\xf4\xfaQ\xcd\xde\x1c RC*\xbei\x80@1s"
 
 privKey = b58encode(makePrivKey).decode()
-print(privKey)
+print("6. makePrivKey - 결과 :" ,makePrivKey)
 # 3Sot9qjkZGdZRaLKNZwAcWyAvX3mHoDyPBnxRV51DhA6ZCT813Re6aSGnkd2brXKgzkCs9t6u8hbDAiEeku8xWjL
 
 

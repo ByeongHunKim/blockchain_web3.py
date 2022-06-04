@@ -1,22 +1,48 @@
 from web3 import Web3, IPCProvider, HTTPProvider
-from base58 import b58encode, b58decode
+from base64 import b64encode, b64decode
+from eth_account import Account
+import secrets
 
 web3 = Web3(HTTPProvider("https://matic-mumbai.chainstacklabs.com"))
+
+isConnected = web3.isConnected()
+
 print("1. 폴리곤 연결여부:", isConnected)
+
+priv = secrets.token_hex(32)
+private_key = "0x" + priv
+print ("2. 생성된 비밀키 남에게 보여주지 말 것 :", private_key)
+acct = Account.from_key(private_key)
+print("3. 생성된 공개키 지갑주소:", acct.address)
+
+# 메타마스크에 2번에 생성된 비밀키로 지갑 가져오기 성공
+
+
+
 
 # privKey = "input_privkey"
 
-# account = web3.eth.accounts.privateKeyToAccount(privKey)
 
-# acct = web3.eth.account.create(privKey)
 
-# publicKey = acct.address
-# secretKey = acct.privateKey
+#account = web3.eth.account.create()
 
-# print('publickey: ', publicKey)
-# print('privkey: ', secretKey)
+#publicKey = account.address
+#privateKey = account.privateKey
 
-#print('privkey: ', acct.privateKey)
+#print('2. account :', account) # <eth_account.signers.local.LocalAccount object at 0x7f18bd173dc0>
+#print('-----------------------------------')
+#print('3. publickey :', publicKey) # publickey : 0xC63f8bDed84FFd8955f642F2F80EeCd3b2F3Cb9a
+#print('4. privkey :', privateKey) # privkey : b'\xea_yT$\x84\n\xd7\x00\xf5`\x16\x9a\x08#\xcdJ"\r\xe9:N\xe3i#|\xa9\xa86\xa9W\x82'
+
+#bytespublicKey = bytes(account.address)
+
+#print('4.1 bytespublicKey :', bytespublicKey)
+
+#realPrivKey = privateKey + bytespublicKey
+
+#realPrivKey = b64encode(privateKey).decode()
+#print('5. realPrivKey :', realPrivKey)
+
 
 #makePrivKey = secretKey + secretKey
 
