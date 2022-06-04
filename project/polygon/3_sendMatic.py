@@ -8,7 +8,7 @@ web3 = Web3(HTTPProvider("https://matic-mumbai.chainstacklabs.com"))
 print("1. 폴리곤 연결여부:", isConnected)
 
 Addr = "0xC1F72d2436f6f23384c2d035e509f795450C2434"
-privKey = "priv_key"
+privKey = "privkey"
 AddrChecksum = web3.toChecksumAddress(Addr)
 print("2. checkSum - 확인여부 :", AddrChecksum)
 print("2.1 privKey - 확인여부 :", privKey)
