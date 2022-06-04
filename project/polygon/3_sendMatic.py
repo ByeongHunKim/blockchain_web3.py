@@ -10,7 +10,7 @@ isConnected = web3.isConnected()
 print("1. 폴리곤 연결여부:", isConnected)
 
 Addr = "0x024Aff00fC375270913E0CdF0b91814457075f3d"
-privKey = "0x339d36f78d20fe6223c48bfd2eebdac9599f6d787902885f99167bc6a420a344" # privkey
+privKey = "privkey" # privkey
 AddrChecksum = web3.toChecksumAddress(Addr)
 print("2. checkSum - 확인여부 :", AddrChecksum)
 print("2.1 privKey - 확인여부 :", privKey)
