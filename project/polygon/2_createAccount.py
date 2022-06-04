@@ -4,7 +4,7 @@ from base58 import b58encode, b58decode
 web3 = Web3(HTTPProvider("https://matic-mumbai.chainstacklabs.com"))
 print("1. 폴리곤 연결여부:", isConnected)
 
-# privKey = "c4bc573075f7dad8dcfc9b9f5c800e94572b0da1497ade9c7d5836df8aeccde2"
+# privKey = "input_privkey"
 
 # account = web3.eth.accounts.privateKeyToAccount(privKey)
 
