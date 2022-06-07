@@ -22,13 +22,13 @@ print("2. 보내는 지갑주소 :" ,fromAddr)
 fromAddrPriv = ""
 print("3. 보내는지갑 비밀키 :" ,fromAddrPriv)
 
-toAddr = "D2oE8PK7zkgNBhPGL6Ro4hctcEStbFZKonZAxStap4zx"
+toAddr = "D2oE8PK7zkgNBhPGL6Ro4hctcEStbFZKonZAxStap4zx" # toAddr = request.POST.get('toAddr')
 print("4. 받는 지갑주소:" ,toAddr)
 
 signKey = b58decode(fromAddrPriv) 
 print("5. 트랜잭션 서명할 signkey:" ,signKey)
 
-sol_amount = 0.1
+sol_amount = 0.1 # ExsolValue = request.POST.get('ExsolValue')
 print("6. 보낼 솔라나 금액:" ,sol_amount)
 
 # transaction
@@ -69,3 +69,5 @@ print("8.1 txHash값 :" ,resultOfTxhash)
 
 # context = {'value' : '1','ui_balance':ui_balance}
 # txFromAddr, txToAddr, txLamport2Sol, resultOfTxhash 등을 넣어서 front에 주던지.. transaction_result['result']
+# ExethValue = request.POST.get('ExethValue') 유저가(from)이 전송하겠다고 UI에 입력한 toAddr값
+# toAddr = request.POST.get('toAddr')유저가(from)이 전송하겠다고 UI에 입력한 sol 금액 값
