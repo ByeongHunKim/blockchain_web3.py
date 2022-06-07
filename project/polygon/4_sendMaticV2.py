@@ -18,7 +18,7 @@ print("1.1 폴리곤 연결여부:", maticIsConnected)
 
 
 Addr = "0xe47EFa9B187563D533E6F3D01CA0b727cdc1494f"
-privKey = "d5b30959df103ae89a80a9b5560eb84491b572860600d89e77debf1a27ed35c1" # privkey
+privKey = "" # privkey
 AddrChecksum = web3.toChecksumAddress(Addr)
 print("2. checkSum - 확인여부 :", AddrChecksum)
 # print("2.1 privKey - 확인여부 :", privKey)
