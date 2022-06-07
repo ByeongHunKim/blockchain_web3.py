@@ -1,11 +1,3 @@
-# solana.py 
-# base58
-# solana-cli
-
-# pip install solana
-# pip install base58
-# sh -c "$(curl -sSfL https://release.solana.com/v1.10.8/install)"
-
 import solana
 from solana.rpc.api import Client
 from solana.account import Account
@@ -47,7 +39,7 @@ print("5. makePrivKey - 결과 :" ,makePrivKey)
 # b"zJD1Js\x00\xb7\x04\xc3V\xbc\xf3\xa9;\xabZ\x05'+\x9f\x81D\xac1\xb8\x1c\xfe.+\x02w9\x15\x90\xe2K\xf5[\xda\x87\x1b\xfb%\xb0e\xb4,\xf4\xfaQ\xcd\xde\x1c RC*\xbei\x80@1s"
 
 privKey = b58encode(makePrivKey).decode()
-print("6. makePrivKey - 결과 :" ,makePrivKey)
+print("6. privKey - 결과 :" ,privKey)
 # 3Sot9qjkZGdZRaLKNZwAcWyAvX3mHoDyPBnxRV51DhA6ZCT813Re6aSGnkd2brXKgzkCs9t6u8hbDAiEeku8xWjL
 
 
