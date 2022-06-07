@@ -9,8 +9,8 @@ web3 = Web3(HTTPProvider("https://matic-mumbai.chainstacklabs.com"))
 isConnected = web3.isConnected()
 print("1. 폴리곤 연결여부:", isConnected)
 
-Addr = "0x024Aff00fC375270913E0CdF0b91814457075f3d"
-privKey = "privkey" # privkey
+Addr = "0xe47EFa9B187563D533E6F3D01CA0b727cdc1494f"
+privKey = "" # privkey
 AddrChecksum = web3.toChecksumAddress(Addr)
 print("2. checkSum - 확인여부 :", AddrChecksum)
 print("2.1 privKey - 확인여부 :", privKey)
@@ -24,11 +24,11 @@ print("4. 잔액 - 확인여부 :", balanceOfAddr)
 nonce = web3.eth.getTransactionCount(AddrChecksum)
 print("4. 논스 - 확인여부 :", nonce)
 
-value = web3.toWei(0.05, 'ether')
+value = web3.toWei(0.09, 'ether')
 print("5. 보내는금액 - 확인여부 :", value)
 
 tx = {'nonce': nonce,
-      'to': '0xC1F72d2436f6f23384c2d035e509f795450C2434',
+      'to': '', # to address
       'value': value,
       'gas': 21000,
       'gasPrice': getGasPrice,
