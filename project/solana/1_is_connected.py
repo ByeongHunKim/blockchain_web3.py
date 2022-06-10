@@ -16,6 +16,7 @@ from solana.transaction import Transaction
 from base58 import b58encode, b58decode
 
 #  ()
+# client = Client("https://api.mainnet-beta.solana.com")
 
 client = Client("https://api.devnet.solana.com")
 

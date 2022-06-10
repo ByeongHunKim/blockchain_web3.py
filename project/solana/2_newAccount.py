@@ -29,6 +29,8 @@ print("2. secretKey - 결과 :" ,secretKey)
 bytesAccount = bytes(account.public_key())
 print("3. bytesAccount - 결과 :" ,bytesAccount)
 # b'9\x15\x90\xe2K\xf5[\xda\x87\x1b\xfb%\xb0e\xb4,\xf4\xfaQ\xcd\xde\x1c RC*\xbei\x80@1s'
+accPubkey = account.public_key()
+print("3.1 accPubkey - 결과 :" ,accPubkey)
 
 publicAddr = b58encode(bytesAccount).decode()
 print("4. publicAddr - 결과 :" ,publicAddr)
